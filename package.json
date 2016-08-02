@@ -1,0 +1,41 @@
+{
+  "name": "converter-mocha-istanbul",
+  "version": "1.0.0",
+  "description": "A node skeleton to test with mocha/supertest and check coverage with istanbul",
+  "main": "app.js",
+  "scripts": {
+	"start": "node ./server.js",
+	"debug": "DEBUG=demo:* node ./server.js",
+	"nodemon": "DEBUG=demo:* nodemon ./server.js",
+	"_comment:":"You need _mocha to run in same process as Istanbul for it to discover tests", 
+	"test": "istanbul cover -x *.test.js node_modules/mocha/bin/_mocha -- -R spec"
+		
+  },
+  "repository": {
+	    "type": "git",
+	    "url": "https://github.com/ananthr74/converter-mocha-istanbul"
+	  },
+	  "keywords": [
+	    "node",
+	    "demo",
+	    "express"
+	  ],
+	  "author": "Im your Huckleberry",
+	  "license": "UNLICENSED",
+	  "bugs": {
+	    "url": "https://github.com/ananthr74/converter-mocha-istanbul/issues"
+	  },
+	  "homepage": "https://github.com/ananthr74/converter-mocha-istanbul",
+  "devDependencies": {
+    "debug": "^2.2.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "nodemon": "^1.10.0",
+    "supertest": "^2.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
